@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace PluginService
+namespace PluginLibrary
 {
     public class PluginForm : Form, IForm
     {

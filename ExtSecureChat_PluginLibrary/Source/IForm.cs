@@ -1,6 +1,4 @@
-﻿using System.Windows.Forms;
-
-namespace PluginService
+﻿namespace PluginLibrary
 {
     public interface IForm
     {

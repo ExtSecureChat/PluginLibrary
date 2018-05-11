@@ -1,4 +1,4 @@
-﻿namespace PluginService
+﻿namespace PluginLibrary
 {
     public static class PluginHelper
     {

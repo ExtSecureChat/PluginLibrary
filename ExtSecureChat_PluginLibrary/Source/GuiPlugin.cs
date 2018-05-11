@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace PluginService
+namespace PluginLibrary
 {
     public abstract class GuiPlugin : Plugin
     {

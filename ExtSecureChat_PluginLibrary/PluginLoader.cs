@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 
-namespace PluginService
+namespace PluginLibrary
 {
     public static class PluginLoader
     {

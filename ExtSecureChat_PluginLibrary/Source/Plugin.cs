@@ -1,6 +1,6 @@
-﻿using static PluginService.PluginHelper;
+﻿using static PluginLibrary.PluginHelper;
 
-namespace PluginService
+namespace PluginLibrary
 {
     public abstract class Plugin
     {

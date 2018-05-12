@@ -24,8 +24,8 @@ namespace ExtSecureChat_PluginLibrary
         public static List<JsonEntities.Repository> GetGithubPlugins()
         {
             var task = getGithubPlugins();
-            var result = task.Result;
             task.Wait();
+            var result = task.Result;
 
             if (result.TotalCount > 0)
             {
@@ -67,8 +67,8 @@ namespace ExtSecureChat_PluginLibrary
         public static JsonEntities.Release GetLatestRelease(JsonEntities.Repository repository)
         {
             var task = getLatestRelease(repository);
-            var result = task.Result;
             task.Wait();
+            var result = task.Result;
 
             if (result != null)
             {
@@ -91,10 +91,8 @@ namespace ExtSecureChat_PluginLibrary
         public static string DownloadAsset(JsonEntities.ReleaseAsset asset, string path)
         {
             var task = downloadAsset(asset, path);
-            var result = task.Result;
             task.Wait();
-
-            return result;
+            return task.Result;
         }
         #endregion
     }

@@ -93,6 +93,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Source\GuiPlugin.cs" />
     <Compile Include="Source\IForm.cs" />
+    <Compile Include="Source\JsonEntities\Release.cs" />
+    <Compile Include="Source\JsonEntities\ReleaseAsset.cs" />
     <Compile Include="Source\JsonEntities\Repository.cs" />
     <Compile Include="Source\JsonEntities\RepositoryOwner.cs" />
     <Compile Include="Source\Plugin.cs" />

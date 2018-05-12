@@ -33,7 +33,7 @@ namespace ExtSecureChat_PluginLibrary
 
                         foreach (Type type in types)
                         {
-                            if (type.IsInterface || !type.IsAbstract)
+                            if (type.IsInterface || type.IsAbstract)
                             {
                                 continue;
                             }
@@ -41,7 +41,7 @@ namespace ExtSecureChat_PluginLibrary
                             {
                                 if (type.GetProperty("Name") != null)
                                 {
-                                    pluginTypes.Add(assembly.FullName, type);
+                                    pluginTypes.Add(assembly.ManifestModule.Name, type);
                                 }
                             }
                         }

@@ -11,6 +11,9 @@ namespace ExtSecureChat_PluginLibrary.JsonEntities
         [JsonProperty("name")]
         public string Name;
 
+        [JsonProperty("tag_name")]
+        public string TagName;
+
         [JsonProperty("description")]
         public string Description;
 

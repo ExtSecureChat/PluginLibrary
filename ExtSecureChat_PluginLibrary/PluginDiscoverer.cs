@@ -27,32 +27,25 @@ namespace ExtSecureChat_PluginLibrary
             task.Wait();
             var result = task.Result;
 
-            if (result.TotalCount > 0)
+            List<JsonEntities.Repository> removeList = new List<JsonEntities.Repository>();
+            foreach (var repo in result.Repos)
             {
-                List<JsonEntities.Repository> removeList = new List<JsonEntities.Repository>();
-                foreach (var repo in result.Repos)
+                if (repo.Private || !repo.Name.StartsWith("ExtSeC_Plugin_"))
                 {
-                    if (repo.Private || !repo.Name.StartsWith("ExtSeC_Plugin_"))
-                    {
-                        removeList.Add(repo);
-                    }
+                    removeList.Add(repo);
                 }
+            }
                 
-                foreach (var repo in removeList)
-                {
-                    result.Repos.Remove(repo);
-                }
-
-                return result.Repos;
-            }
-            else
+            foreach (var repo in removeList)
             {
-                return null;
+                result.Repos.Remove(repo);
             }
+
+            return result.Repos;
         }
         #endregion
 
-        #region --- Get Release ---
+        #region --- Get Releases ---
         private static async Task<JsonEntities.Release> getLatestRelease(JsonEntities.Repository repository)
         {
             return await "https://api.github.com/repos"
@@ -68,16 +61,25 @@ namespace ExtSecureChat_PluginLibrary
         {
             var task = getLatestRelease(repository);
             task.Wait();
-            var result = task.Result;
+            return task.Result;
+        }
 
-            if (result != null)
-            {
-                return result;
-            }
-            else
-            {
-                return null;
-            }
+        private static async Task<List<JsonEntities.Release>> getReleases(JsonEntities.Repository repository)
+        {
+            return await "https://api.github.com/repos"
+                .AppendPathSegment(repository.Owner.Name)
+                .AppendPathSegment(repository.Name)
+                .AppendPathSegment("releases")
+                .WithHeader("Accept", "application / vnd.github.v3 + json")
+                .WithHeader("User-Agent", "Anything")
+                .GetJsonListAsync() as List<JsonEntities.Release>;
+        }
+
+        public static List<JsonEntities.Release> GetReleases(JsonEntities.Repository repository)
+        {
+            var task = getReleases(repository);
+            task.Wait();
+            return task.Result;
         }
         #endregion
 

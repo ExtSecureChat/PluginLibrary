@@ -12,6 +12,7 @@ namespace ExtSecureChat_PluginLibrary
         }
 
         public abstract string Name { get; }
+        public string FullName;
         public bool Enabled;
         public abstract PluginTypes PluginType { get; }
 

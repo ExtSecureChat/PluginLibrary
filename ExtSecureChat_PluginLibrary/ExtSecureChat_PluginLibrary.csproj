@@ -86,7 +86,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GenericPluginLoader.cs" />
     <Compile Include="PluginDiscoverer.cs" />
     <Compile Include="PluginHelper.cs" />
     <Compile Include="PluginLoader.cs" />

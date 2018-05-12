@@ -42,7 +42,7 @@ namespace ExtSecureChat_PluginLibrary
                                 if (type.GetProperty("Name") != null)
                                 {
                                     string fullName = assembly.ManifestModule.Name;
-                                    pluginTypes.Add(fullName.Remove(fullName.Length - 4, 4), type);
+                                    pluginTypes.Add(fullName.Remove(fullName.Length - 4, 4) + "(" + type.GetProperty("Name") + ")", type);
                                 }
                             }
                         }
@@ -53,7 +53,7 @@ namespace ExtSecureChat_PluginLibrary
                 foreach (var type in pluginTypes)
                 {
                     Plugin plugin = (Plugin)Activator.CreateInstance(type.Value);
-                    plugin.FullName = type.Key + "(" + plugin.Name + ")";
+                    plugin.FullName = type.Key;
                     plugins.Add(plugin);
                 }
 

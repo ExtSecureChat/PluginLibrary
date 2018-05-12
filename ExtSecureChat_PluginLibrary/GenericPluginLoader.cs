@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 
-namespace PluginLibrary
+namespace ExtSecureChat_PluginLibrary
 {
     public static class GenericPluginLoader<T>
     {

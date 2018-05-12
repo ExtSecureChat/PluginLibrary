@@ -1,4 +1,4 @@
-﻿namespace PluginLibrary
+﻿namespace ExtSecureChat_PluginLibrary
 {
     public static class PluginHelper
     {

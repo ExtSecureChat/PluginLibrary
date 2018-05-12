@@ -1,6 +1,6 @@
-﻿using static PluginLibrary.PluginHelper;
+﻿using static ExtSecureChat_PluginLibrary.PluginHelper;
 
-namespace PluginLibrary
+namespace ExtSecureChat_PluginLibrary
 {
     public abstract class Plugin
     {

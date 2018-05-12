@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace PluginLibrary
+namespace ExtSecureChat_PluginLibrary
 {
     public class PluginForm : Form, IForm
     {

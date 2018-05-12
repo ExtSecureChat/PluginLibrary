@@ -39,7 +39,7 @@ namespace ExtSecureChat_PluginLibrary
                             }
                             else
                             {
-                                if (type.FullName != null && type.IsSubclassOf(typeof(T)))
+                                if (type.FullName != null)
                                 {
                                     pluginTypes.Add(type);
                                 }
@@ -51,8 +51,15 @@ namespace ExtSecureChat_PluginLibrary
                 List<T> plugins = new List<T>(pluginTypes.Count);
                 foreach (Type type in pluginTypes)
                 {
-                    T plugin = (T)Activator.CreateInstance(type);
-                    plugins.Add(plugin);
+                    try
+                    {
+                        T plugin = (T)Activator.CreateInstance(type);
+                        plugins.Add(plugin);
+                    }
+                    catch (Exception)
+                    {
+                        Console.Error.WriteLine("Not a valid plugin");
+                    }
                 }
 
                 return plugins;

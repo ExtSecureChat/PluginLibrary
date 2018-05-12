@@ -24,7 +24,7 @@ namespace ExtSecureChat_PluginLibrary
                 }
 
                 Type pluginType = typeof(Plugin);
-                Dictionary<string, Type> pluginTypes = new Dictionary<string, Type>();
+                List<Type> pluginTypes = new List<Type>();
                 foreach (Assembly assembly in assemblies)
                 {
                     if (assembly != null)
@@ -41,8 +41,7 @@ namespace ExtSecureChat_PluginLibrary
                             {
                                 if (type.GetProperty("Name") != null)
                                 {
-                                    string fullName = assembly.ManifestModule.Name;
-                                    pluginTypes.Add(fullName.Remove(fullName.Length - 4, 4) + "(" + type.GetProperty("Name") + ")", type);
+                                    pluginTypes.Add(type);
                                 }
                             }
                         }
@@ -52,9 +51,17 @@ namespace ExtSecureChat_PluginLibrary
                 List<Plugin> plugins = new List<Plugin>(pluginTypes.Count);
                 foreach (var type in pluginTypes)
                 {
-                    Plugin plugin = (Plugin)Activator.CreateInstance(type.Value);
-                    plugin.FullName = type.Key;
-                    plugins.Add(plugin);
+                    try
+                    {
+                        Plugin plugin = (Plugin)Activator.CreateInstance(type);
+                        string fullName = type.Assembly.ManifestModule.Name;
+                        plugin.FullName = fullName.Remove(fullName.Length - 4, 4) + "(" + plugin.Name + ")";
+                        plugins.Add(plugin);
+                    }
+                    catch (Exception)
+                    {
+                        continue;
+                    }
                 }
 
                 return plugins;

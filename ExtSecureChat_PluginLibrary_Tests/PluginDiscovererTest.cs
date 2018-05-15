@@ -1,9 +1,9 @@
 ﻿using System;
 using System.IO;
-using ExtSecureChat_PluginLibrary;
+using ExtSecureChat.PluginLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ExtSecureChat_PluginLibrary_Tests
+namespace ExtSecureChat.PluginLibrary.Tests
 {
     [TestClass]
     public class PluginDiscovererTest

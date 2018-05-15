@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ExtSecureChat_PluginLibrary
+namespace ExtSecureChat.PluginLibrary
 {
     public abstract class GuiPlugin : Plugin
     {

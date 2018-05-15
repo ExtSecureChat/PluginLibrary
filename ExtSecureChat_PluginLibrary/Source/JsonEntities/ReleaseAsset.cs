@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace ExtSecureChat_PluginLibrary.JsonEntities
+namespace ExtSecureChat.PluginLibrary.JsonEntities
 {
     public class ReleaseAsset
     {

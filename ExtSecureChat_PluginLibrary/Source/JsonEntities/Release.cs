@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace ExtSecureChat_PluginLibrary.JsonEntities
+namespace ExtSecureChat.PluginLibrary.JsonEntities
 {
     public class Release
     {

@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Flurl;
 using Flurl.Http;
 
-namespace ExtSecureChat_PluginLibrary
+namespace ExtSecureChat.PluginLibrary
 {
     public static class PluginDiscoverer
     {

@@ -7,8 +7,8 @@
     <ProjectGuid>{77458189-56FF-4FEC-87CB-0B54B1BF8570}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExtSecureChat_PluginLibrary</RootNamespace>
-    <AssemblyName>ExtSecureChat_PluginLibrary</AssemblyName>
+    <RootNamespace>ExtSecureChat.PluginLibrary</RootNamespace>
+    <AssemblyName>ExtSecureChat.PluginLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

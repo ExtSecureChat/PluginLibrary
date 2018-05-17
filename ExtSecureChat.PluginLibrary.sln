@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2037
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtSecureChat.PluginLibrary.Tests", "test\ExtSecureChat.PluginLibrary.Tests\ExtSecureChat.PluginLibrary.Tests.csproj", "{CEADA640-3100-40DF-9993-B35C69B84300}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtSecureChat.PluginLibrary", "src\ExtSecureChat.PluginLibrary\ExtSecureChat.PluginLibrary.csproj", "{1ABF633F-311A-4837-BD8A-E1E850923B2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEADA640-3100-40DF-9993-B35C69B84300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEADA640-3100-40DF-9993-B35C69B84300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEADA640-3100-40DF-9993-B35C69B84300}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CEADA640-3100-40DF-9993-B35C69B84300}.Debug|x64.Build.0 = Debug|Any CPU
+		{CEADA640-3100-40DF-9993-B35C69B84300}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CEADA640-3100-40DF-9993-B35C69B84300}.Debug|x86.Build.0 = Debug|Any CPU
+		{CEADA640-3100-40DF-9993-B35C69B84300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEADA640-3100-40DF-9993-B35C69B84300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEADA640-3100-40DF-9993-B35C69B84300}.Release|x64.ActiveCfg = Release|Any CPU
+		{CEADA640-3100-40DF-9993-B35C69B84300}.Release|x64.Build.0 = Release|Any CPU
+		{CEADA640-3100-40DF-9993-B35C69B84300}.Release|x86.ActiveCfg = Release|Any CPU
+		{CEADA640-3100-40DF-9993-B35C69B84300}.Release|x86.Build.0 = Release|Any CPU
+		{1ABF633F-311A-4837-BD8A-E1E850923B2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ABF633F-311A-4837-BD8A-E1E850923B2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ABF633F-311A-4837-BD8A-E1E850923B2B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{1ABF633F-311A-4837-BD8A-E1E850923B2B}.Debug|x64.Build.0 = Debug|Any CPU
+		{1ABF633F-311A-4837-BD8A-E1E850923B2B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1ABF633F-311A-4837-BD8A-E1E850923B2B}.Debug|x86.Build.0 = Debug|Any CPU
+		{1ABF633F-311A-4837-BD8A-E1E850923B2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ABF633F-311A-4837-BD8A-E1E850923B2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ABF633F-311A-4837-BD8A-E1E850923B2B}.Release|x64.ActiveCfg = Release|Any CPU
+		{1ABF633F-311A-4837-BD8A-E1E850923B2B}.Release|x64.Build.0 = Release|Any CPU
+		{1ABF633F-311A-4837-BD8A-E1E850923B2B}.Release|x86.ActiveCfg = Release|Any CPU
+		{1ABF633F-311A-4837-BD8A-E1E850923B2B}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E2A32B06-40FD-4CA5-BC99-9E4F4600DC30}
+	EndGlobalSection
+EndGlobal

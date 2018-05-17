@@ -2,18 +2,18 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("ExtSecureChat_PluginLibrary_Tests")]
+[assembly: AssemblyTitle("ExtSecureChat.PluginLibrary.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("ExtSecureChat_PluginLibrary_Tests")]
+[assembly: AssemblyProduct("ExtSecureChat.PluginLibrary.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
 [assembly: ComVisible(false)]
 
-[assembly: Guid("8532c574-d81f-4385-8760-f03a51d4034f")]
+[assembly: Guid("ceada640-3100-40df-9993-b35c69b84300")]
 
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
